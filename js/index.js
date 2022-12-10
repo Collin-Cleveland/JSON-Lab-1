@@ -28,11 +28,11 @@ window.onload = function()
 
 		//lets give it velocity X and Y
 		this.xVel = 10 + Math.random()*20;
-		this.yVel = 1;
+		this.yVel = 5;
 
 		//the box width and height
-		this.width = 20;
-		this.height = 20;
+		this.width = 50;
+		this.height = 10;
 
 		//random colors for our box
 		this.r = Math.round(Math.random()*255);
@@ -91,8 +91,8 @@ window.onload = function()
 			if(this.y > H - this.height)
 			{
 				//when it bounces off the bottom decrease the ball speed
-				this.xVel *= .8;
-				this.yVel *= .8;
+				this.xVel *= .9;
+				this.yVel *= .9;
 
 				this.y = H - this.height; //set its position to 0
 				this.yVel *= -1; //make it bounce
