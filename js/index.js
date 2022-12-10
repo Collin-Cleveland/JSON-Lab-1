@@ -35,9 +35,9 @@ window.onload = function()
 		this.height = 20;
 
 		//random colors for our box
-		/*this.r = Math.round(Math.random()*255);
+		this.r = Math.round(Math.random()*255);
 		this.g = Math.round(Math.random()*255);
-		this.b = Math.round(Math.random()*255);*/
+		this.b = Math.round(Math.random()*255);
 
 		this.randomColor = randomInt(0,colorsArray.colors.length-1);
 		this.r = colorsArray.colors[this.randomColor].red;
@@ -91,8 +91,8 @@ window.onload = function()
 			if(this.y > H - this.height)
 			{
 				//when it bounces off the bottom decrease the ball speed
-				this.xVel *= .5;
-				this.yVel *= .5;
+				this.xVel *= .8;
+				this.yVel *= .8;
 
 				this.y = H - this.height; //set its position to 0
 				this.yVel *= -1; //make it bounce
